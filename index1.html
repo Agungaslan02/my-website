@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri - John Doe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #3351b1;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .section {
+            background: white;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        .bio img {
+            max-width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .experience p, .projects p, .contact ul li {
+            margin: 0.5rem 0;
+        }
+        .contact ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact ul li {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+        .contact ul li i {
+            margin-right: 10px;
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Biodata Diri</h1>
+    </header>
+    <div class="container">
+        <section class="section bio">
+            <h2>Nama</h2>
+            <img src="Agungs.jpeg" alt="Foto Profil">
+            <p>Agung Sutopo</p>
+            <h2>Deskripsi Singkat</h2>
+            <p>Saya adalah seorang pemula dan saya sangat ingin mengenal dan memulai untuk menjadi seorang trader, mulai dari mengasah skill tengtang analisa dan market.</p>
+        </section>
+        <section class="section experience">
+            <h2>Pengalaman Kerja</h2>
+            <p><strong>Pengembang Web di Ruang Ternyaman</strong> (2018 - Sekarang)</p>
+            <p>Bertanggung jawab atas pengembangan dan pemeliharaan situs web buatan sendiri.</p>
+            <p><strong>Pengembang Front-End di Reo_sedulur Ltd</strong> (2015 - 2018)</p>
+            <p>Membangun antarmuka pengguna untuk berbagai kebutuhan.</p>
+        </section>
+        <section class="section projects">
+            <h2>Proyek</h2>
+            <img src="trader.png" alt="Gambar Proyek">
+            <p><strong>Website Trader</strong></p>
+            <p>Membangun situs web trader sebagai sarana belajar bersama.</p>
+            <p><strong>Aplikasi Manajemen Tugas</strong></p>
+            <p>Mengembangkan aplikasi manajemen tugas untuk menentukan buy sell entry data.</p>
+        </section>
+        <section class="section contact">
+            <h2>Kontak</h2>
+            <ul>
+                <li><i class="fas fa-envelope"></i> Email: Agungaslan@example.com</li>
+                <li><i class="fas fa-phone-alt"></i> Telepon: +123456789</li>
+                <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Agung Aslan
+    </footer>
+</body>
+</html>
