@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 3</title>
+    <title>Simulasi Trading</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -12,22 +12,40 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
         }
         .container {
-            width: 80%;
-            margin: 2rem auto;
             background: white;
             padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         h1 {
             color: #3351b1;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .price {
+            font-size: 2rem;
+            color: #b22287;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Halaman 1</h1>
-        <p>Ini adalah konten untuk
+        <h1>Simulasi Trading</h1>
+        <p>Harga Kripto Terbaru</p>
+        <div class="price" id="price">Loading...</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
